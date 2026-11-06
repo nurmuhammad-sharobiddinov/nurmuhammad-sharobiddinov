@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Stats card
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=github&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&border_color=30363D&ring_color=58A6FF
@@ -27,7 +27,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Top languages card
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&border_color=30363D
